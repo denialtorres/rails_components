@@ -1,0 +1,21 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: rails_components
+  host: <%= ENV.fetch("DATABASE_HOST") %>
+  port: <%= ENV.fetch("DATABASE_PORT") %>
+
+development:
+  <<: *default
+  database: rails_components_development
+
+test:
+  <<: *default
+  database: rails_components_test
+
+production:
+  <<: *default
+  database: rails_components_production
+  username: rails_components
+  password:
