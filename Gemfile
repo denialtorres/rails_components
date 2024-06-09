@@ -63,6 +63,7 @@ end
 gem "paranoia"
 gem "audited"
 gem "devise"
+gem 'tailwindcss-rails', '>= 2.0.32'
 
 group :development, :test do
   gem "dotenv-rails"

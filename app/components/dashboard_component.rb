@@ -9,7 +9,7 @@ class DashboardComponent
     <<~CONTENT.html_safe
       <div>
         <h1 class="font-bold text-4xl">#{title}</h1> 
-        <p>#{description}<p>
+        <p>#{description}</p>
       </div>
     CONTENT
   end

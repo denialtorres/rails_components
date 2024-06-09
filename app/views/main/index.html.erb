@@ -1,2 +1,13 @@
+<div>
+  <h1 class="font-bold text-4xl">Dashboard</h1>
+  <p>This is a custom component.</p>
+</div>
+
 <%= render DashboardComponent.new(title: "Dashboard", 
                                   description: "this is a custom dashboard") %>
+
+<%= render CardComponent.new do %>
+  This goes in the card
+
+  <%= pluralize 19, "todo" %>
+<% end %>
