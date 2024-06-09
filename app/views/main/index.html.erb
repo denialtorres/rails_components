@@ -1,8 +1,8 @@
-<%= render DashboardComponent.new(title: "Dashboard", 
+<%= render DashboardComponent.new(title: "Dashboard",
                                   description: "this is a custom dashboard") %>
 
 <%= render CardComponent.new do %>
-  <%= render DashboardComponent.new(title: "Title Card", 
+  <%= render DashboardComponent.new(title: "Title Card",
                                     description: "this is my card") %>
 <% end %>
 
@@ -18,3 +18,5 @@
     <%= button_tag "Accept" %>
   <% end %>
 <% end %>
+
+<%= link_to 'Download PDF', download_pdf_path(format: :pdf), class: 'btn btn-primary' %>

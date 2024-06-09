@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-ruby "3.0.0"
+ruby "3.0.5"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.1.3", ">= 7.1.3.4"
@@ -64,6 +64,7 @@ gem "paranoia"
 gem "audited"
 gem "devise"
 gem 'tailwindcss-rails', '>= 2.0.32'
+gem 'wicked_pdf'
 
 group :development, :test do
   gem "dotenv-rails"
@@ -71,4 +72,5 @@ group :development, :test do
   gem "factory_bot_rails"
   gem "faker"
   gem "rspec-rails"
+  gem "pry"
 end
